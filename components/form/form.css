@@ -1,0 +1,54 @@
+/* form-component.css */
+
+.form-component {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-question {
+    font-size: clamp(1rem, 1.2vw, 1.2rem);
+    font-weight: 600;
+    color: #003366;
+    margin-bottom: 0.5rem;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #003366;
+    border-radius: 50%;
+    outline: none;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked {
+    background-color: #0066cc;
+    border-color: #0066cc;
+}
+
+.radio-label {
+    font-size: clamp(0.9rem, 1vw, 1rem);
+    color: #003366;
+}

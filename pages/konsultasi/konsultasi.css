@@ -1,0 +1,192 @@
+#start-consultation-form {
+    margin: 0 auto;
+    padding: 50px 0;
+    display: grid;
+    align-content: center;
+    gap: 1.5rem;
+    height: 100vh;
+    max-height: 700px;
+    text-align: center;
+}
+
+#start-consultation-form label {
+    font-weight: bold;
+}
+
+.start-consultation-box {
+    display: grid;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.start-consultation-box input {
+    width: 200px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    box-shadow: 0 0 3px #333;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    justify-self: center;
+    align-self: center;
+}
+
+.start-consultation-box button {
+    padding: 0.6em 1.4em;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    font-size: var(--font-size);
+    text-decoration: none;
+    border: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.start-consultation-box button:hover {
+    background-color: var(--primary-hover);
+    color: var(--primary-color);
+}
+
+/* Form Component */
+.form-component {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-question {
+    font-size: clamp(1rem, 1.2vw, 1.2rem);
+    font-weight: 600;
+    color: #003366;
+    margin-bottom: 0.5rem;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #003366;
+    border-radius: 50%;
+    outline: none;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked {
+    background-color: #0066cc;
+    border-color: #0066cc;
+}
+
+.radio-label {
+    font-size: clamp(0.9rem, 1vw, 1rem);
+    color: #003366;
+}
+
+/* Konsultasi Page */
+.konsultasi-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.hero {
+    padding: 4rem 2rem 0;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.progress-wrapper {
+    width: 100%;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    width: 0;
+    height: 100%;
+    background-color: #0066cc;
+    transition: width 0.3s ease;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    gap: 1rem;
+}
+
+.nav-btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #0066cc;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:disabled {
+    background-color: #a0c8f0;
+    cursor: not-allowed;
+}
+
+.nav-btn:hover:not(:disabled) {
+    background-color: #004d99;
+}
+
+#submit-btn {
+    background-color: #28a745; /* Green for "Submit" */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit-btn:hover {
+    background-color: #218838;
+}
+
+#submit-btn:disabled {
+    background-color: #c3e6cb;
+    cursor: not-allowed;
+}
+
+
+@media (max-width: 768px) {
+    #start-consultation-form {
+        max-height: 500px;
+    }
+}

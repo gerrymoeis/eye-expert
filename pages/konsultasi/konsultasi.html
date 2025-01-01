@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye Consultant - Expert System | Consultation</title>
+    
+    <!-- SEO Tags -->
+    <meta name="description" content="Eye consultant expert system for diagnosing eye diseases using Fuzzy Mamdani Method.">
+    <meta name="keywords" content="Eye Diagnosis, Expert System, Fuzzy Logic, Mamdani Method, Eye Disease">
+    <meta name="author" content="Your Name">
+    
+    <!-- Open Graph Tags for Social Sharing -->
+    <meta property="og:title" content="Eye Consultant Expert System">
+    <meta property="og:description" content="An expert system to diagnose eye diseases using Fuzzy Mamdani Method.">
+    <meta property="og:image" content="path_to_image/og-image.jpg">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Favicons -->
+    <link rel="icon" href="../../assets/logo.png" type="image/x-icon">
+
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/df6b5b225c.js" crossorigin="anonymous"></script>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="konsultasi.css">
+
+    <!-- External JavaScript -->
+    <!-- <script defer src="../../index.js"></script> -->
+    <script defer src="konsultasi.js"></script>
+</head>
+<body>
+    <!-- Navbar Component -->
+    <div id="navbar"></div>
+
+    <div id="start-consultation-form">
+        <h2>Start Your Consultation</h2>
+        <form id="username-form">
+            <label for="user_name">Enter Your Name:</label>
+            <div class="start-consultation-box">
+                <input type="text" id="user_name" name="user_name" required />
+                <button type="submit">Start Consultation</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Main Content Area -->
+    <main class="konsultasi-page" id="consultation-main" style="display: none;">
+        <section class="hero">
+            <div class="hero__content">
+                <h1>Konsultasi</h1>
+                <p>Answer the questions below to help us diagnose your symptoms.</p>
+            </div>
+        </section>
+
+        
+        <!-- Progress Bar -->
+        <section class="progress-wrapper">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </section>
+
+        <!-- Questions Container -->
+        <section>
+            <div id="question-container">
+                <!-- Question forms dynamically injected here -->
+            </div>
+        </section>
+
+        <!-- Navigation Buttons -->
+        <section>
+            <div class="navigation">
+                <button id="back-btn" class="nav-btn" disabled>Back</button>
+                <button id="submit-btn" class="nav-btn" style="display: none;">Submit Consultation</button>
+                <button id="next-btn" class="nav-btn" disabled>Next</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Component -->
+    <div id="footer"></div>
+</body>
+</html>
